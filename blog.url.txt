@@ -1,0 +1,141 @@
+"https://blog.csdn.net/haoel/article/details/6338025" 再谈“我是怎么招聘程序员的”
+"https://blog.csdn.net/haoel/article/details/6212499" C技巧：结构体参数转成不定参数
+"https://blog.csdn.net/haoel/article/details/6212491" 免费电子书列表
+"https://blog.csdn.net/haoel/article/details/6211666" 公告：请访问我Blog新站——酷壳 CoolShell.cn
+"https://blog.csdn.net/haoel/article/details/5873528" 最佳编程语录
+"https://blog.csdn.net/haoel/article/details/5787633" 如何管理并设计你的口令
+"https://blog.csdn.net/haoel/article/details/5782907" 五种应该避免的代码注释
+"https://blog.csdn.net/haoel/article/details/5755241" 一些重要的算法
+"https://blog.csdn.net/haoel/article/details/5755230" 五个方法成为更好的程序员
+"https://blog.csdn.net/haoel/article/details/5752106" 十条不错的编程观点
+"https://blog.csdn.net/haoel/article/details/5739685" 老手是这样教新手编程的
+"https://blog.csdn.net/haoel/article/details/5739674" 新手该学什么编程语言
+"https://blog.csdn.net/haoel/article/details/5590285" “21天教你学会C++”
+"https://blog.csdn.net/haoel/article/details/5520463" 微软的安全补丁分析
+"https://blog.csdn.net/haoel/article/details/5461684" 各种流行的编程风格
+"https://blog.csdn.net/haoel/article/details/5461669" 程序命名的一些提示
+"https://blog.csdn.net/haoel/article/details/5441478" 程序员眼中的编程语言和操作系统
+"https://blog.csdn.net/haoel/article/details/5441354" 哥是玩程序的
+"https://blog.csdn.net/haoel/article/details/5222671" UI的恶梦
+"https://blog.csdn.net/haoel/article/details/5222663" 程序员相关的笑话
+"https://blog.csdn.net/haoel/article/details/5032418" 我是怎么招聘程序员的
+"https://blog.csdn.net/haoel/article/details/5011420" 超强：Unix道德经(英文版)
+"https://blog.csdn.net/haoel/article/details/5011395" 程序语言性能比拼
+"https://blog.csdn.net/haoel/article/details/4938200" 恐怖的C++语言
+"https://blog.csdn.net/haoel/article/details/4914403" 橡皮鸭程序调试法
+"https://blog.csdn.net/haoel/article/details/4914366" 别的程序员是怎么读你的简历的
+"https://blog.csdn.net/haoel/article/details/4875507" Richard Feynman, 挑战者号, 软件工程
+"https://blog.csdn.net/haoel/article/details/4875499" 装完Ubuntu 9.10后要干的事
+"https://blog.csdn.net/haoel/article/details/4795024" ldd 的一个安全问题
+"https://blog.csdn.net/haoel/article/details/4789364" 使用Flex Bison 和LLVM编写自己的编译器
+"https://blog.csdn.net/haoel/article/details/4737425" 程序员小抄大全
+"https://blog.csdn.net/haoel/article/details/4737328" Google Maps API用法教程
+"https://blog.csdn.net/haoel/article/details/4718354" Windows 7 的新粉丝 Linus Torvalds
+"https://blog.csdn.net/haoel/article/details/4677757" 到处都是Unix的胎记
+"https://blog.csdn.net/haoel/article/details/4674547" GDB 7.0 与 回溯调试
+"https://blog.csdn.net/haoel/article/details/4664207" C++的std::string的“读时也拷贝”技术！
+"https://blog.csdn.net/haoel/article/details/4664170" 8个实用而有趣Bash命令提示行
+"https://blog.csdn.net/haoel/article/details/4517510" 编程真难啊
+"https://blog.csdn.net/haoel/article/details/4485516" 谁写了Linux?
+"https://blog.csdn.net/haoel/article/details/4469526" Code Review中的几个提示
+"https://blog.csdn.net/haoel/article/details/4469462" 简单实用的Code Review工具
+"https://blog.csdn.net/haoel/article/details/4343566" BT雷人的程序语言
+"https://blog.csdn.net/haoel/article/details/4319793" Java构造时成员初始化的陷阱
+"https://blog.csdn.net/haoel/article/details/4296648" 十个糟糕的程序员的行为
+"https://blog.csdn.net/haoel/article/details/4282239" 如何在Java中避免equals方法的隐藏陷阱
+"https://blog.csdn.net/haoel/article/details/4269760" Unix 40年：Unix年鉴
+"https://blog.csdn.net/haoel/article/details/4261763" Unix 40年：操作系统革命的昨天，今天和明天
+"https://blog.csdn.net/haoel/article/details/4250961" 编程十诫
+"https://blog.csdn.net/haoel/article/details/4233454" 22条经典的编程引言
+"https://blog.csdn.net/haoel/article/details/4231029" C语言的谜题
+"https://blog.csdn.net/haoel/article/details/4225974" 如何加密/弄乱C源代码
+"https://blog.csdn.net/haoel/article/details/4217950" 谁说C语言很简单？
+"https://blog.csdn.net/haoel/article/details/4217565" 6个变态的C语言写的Hello World
+"https://blog.csdn.net/haoel/article/details/4197010" 语言的歧义
+"https://blog.csdn.net/haoel/article/details/4134807" Linux设备驱动Hello World程序介绍
+"https://blog.csdn.net/haoel/article/details/4065115" 程序员需要具备的基本技能
+"https://blog.csdn.net/haoel/article/details/4053051" 程序员的八个级别
+"https://blog.csdn.net/haoel/article/details/4053048" 惹恼程序员的十件事
+"https://blog.csdn.net/haoel/article/details/4028232" 深入浅出单实例Singleton设计模式
+"https://blog.csdn.net/haoel/article/details/4026200" 基于JVM的语言正在开始流行
+"https://blog.csdn.net/haoel/article/details/4015361" C++和Java传统中积极的一面
+"https://blog.csdn.net/haoel/article/details/4013883" 优秀程序员的十个习惯
+"https://blog.csdn.net/haoel/article/details/4003797" IBM收购Sun，这是一种什么样的精神？
+"https://blog.csdn.net/haoel/article/details/3976689" 怎样做一个 Program Manager
+"https://blog.csdn.net/haoel/article/details/3876121" Fork 系统炸弹
+"https://blog.csdn.net/haoel/article/details/3869257" 时间：1234567890
+"https://blog.csdn.net/haoel/article/details/3868090" 结对编程的利与弊
+"https://blog.csdn.net/haoel/article/details/3868088" Java书籍Top 10
+"https://blog.csdn.net/haoel/article/details/3081385" C++ 对象的内存布局（下）
+"https://blog.csdn.net/haoel/article/details/3081328" C++ 对象的内存布局（上）
+"https://blog.csdn.net/haoel/article/details/2379586" Java NIO 类库Selector机制解析（续）
+"https://blog.csdn.net/haoel/article/details/2289305" 用GDB 调试Java程序
+"https://blog.csdn.net/haoel/article/details/2224069" Java NIO类库Selector机制解析（下）
+"https://blog.csdn.net/haoel/article/details/2224055" Java NIO类库Selector机制解析（上）
+"https://blog.csdn.net/haoel/article/details/1948051" C++ 虚函数表解析
+"https://blog.csdn.net/haoel/article/details/1696333" GPLv3：大教堂和集市的新一轮对抗
+"https://blog.csdn.net/haoel/article/details/1688104" 谈谈职业规划——CSDN对我的采访
+"https://blog.csdn.net/haoel/article/details/1688006" Unix现状与未来——CSDN对我的采访
+"https://blog.csdn.net/haoel/article/details/1602108" 警惕UNIX下的LD_PRELOAD环境变量
+"https://blog.csdn.net/haoel/article/details/1542353" Unix传奇 （下篇）
+"https://blog.csdn.net/haoel/article/details/1542340" Unix传奇 （上篇）
+"https://blog.csdn.net/haoel/article/details/1533720" 其实Unix很简单
+"https://blog.csdn.net/haoel/article/details/1491219" STL 的string类怎么啦？
+"https://blog.csdn.net/haoel/article/details/1395358" 从语句 char* p="test" 说起
+"https://blog.csdn.net/haoel/article/details/1388498" C/C++返回内部静态成员的陷阱
+"https://blog.csdn.net/haoel/article/details/1383877" “抄袭事件”判决书
+"https://blog.csdn.net/haoel/article/details/1332677" “抄袭事件”开庭小志
+"https://blog.csdn.net/haoel/article/details/754726" 抄袭事件进展日志
+"https://blog.csdn.net/haoel/article/details/741473" 抄袭事件民事起诉书
+"https://blog.csdn.net/haoel/article/details/640235" “清华大学出版社抄袭事件”——章忆文给我的短信
+"https://blog.csdn.net/haoel/article/details/636557" 绝不妥协
+"https://blog.csdn.net/haoel/article/details/628927" 清华大学出版社“抄袭事件”回放
+"https://blog.csdn.net/haoel/article/details/626094" 抄袭的人是可耻的
+"https://blog.csdn.net/haoel/article/details/24077" 标准C＋＋类string的Copy-On-Write技术（三）
+"https://blog.csdn.net/haoel/article/details/24065" 标准C＋＋类string的Copy-On-Write技术（二）
+"https://blog.csdn.net/haoel/article/details/24058" 标准C＋＋类string的Copy-On-Write技术（一）
+"https://blog.csdn.net/haoel/article/details/2894" 跟我一起写 Makefile（九）
+"https://blog.csdn.net/haoel/article/details/2896" 跟我一起写 Makefile（十一）
+"https://blog.csdn.net/haoel/article/details/2897" 跟我一起写 Makefile（十二）
+"https://blog.csdn.net/haoel/article/details/2898" 跟我一起写 Makefile（十三）
+"https://blog.csdn.net/haoel/article/details/2893" 跟我一起写 Makefile（八）
+"https://blog.csdn.net/haoel/article/details/2892" 跟我一起写 Makefile（七）
+"https://blog.csdn.net/haoel/article/details/2895" 跟我一起写 Makefile（十）
+"https://blog.csdn.net/haoel/article/details/2891" 跟我一起写 Makefile（六）
+"https://blog.csdn.net/haoel/article/details/2890" 跟我一起写 Makefile（五）
+"https://blog.csdn.net/haoel/article/details/2889" 跟我一起写 Makefile（四）
+"https://blog.csdn.net/haoel/article/details/2887" 跟我一起写 Makefile（二）
+"https://blog.csdn.net/haoel/article/details/2888" 跟我一起写 Makefile（三）
+"https://blog.csdn.net/haoel/article/details/2886" 跟我一起写 Makefile（一）
+"https://blog.csdn.net/haoel/article/details/2899" 跟我一起写 Makefile（十四）
+"https://blog.csdn.net/haoel/article/details/2906" 以程序的方式操纵NTFS的文件权限（中）
+"https://blog.csdn.net/haoel/article/details/2905" 以程序的方式操纵NTFS的文件权限（上）
+"https://blog.csdn.net/haoel/article/details/2907" 以程序的方式操纵NTFS的文件权限（下）
+"https://blog.csdn.net/haoel/article/details/2904" C/C++内存问题检查利器—Purify （五）
+"https://blog.csdn.net/haoel/article/details/2903" C/C++内存问题检查利器—Purify （四）
+"https://blog.csdn.net/haoel/article/details/2902" C/C++内存问题检查利器—Purify （三）
+"https://blog.csdn.net/haoel/article/details/2901" C/C++内存问题检查利器—Purify （二）
+"https://blog.csdn.net/haoel/article/details/2900" C/C++内存问题检查利器—Purify （一）
+"https://blog.csdn.net/haoel/article/details/2881" 用GDB调试程序（三）
+"https://blog.csdn.net/haoel/article/details/2884" 用GDB调试程序（六）
+"https://blog.csdn.net/haoel/article/details/2885" 用GDB调试程序（七）
+"https://blog.csdn.net/haoel/article/details/2882" 用GDB调试程序（四）
+"https://blog.csdn.net/haoel/article/details/2883" 用GDB调试程序（五）
+"https://blog.csdn.net/haoel/article/details/2880" 用GDB调试程序（二）
+"https://blog.csdn.net/haoel/article/details/2879" 用GDB调试程序（一）
+"https://blog.csdn.net/haoel/article/details/2865" 《自适应软件开发》—从奴隶主到领袖< 1 序言 >
+"https://blog.csdn.net/haoel/article/details/2867" 《自适应软件开发》—从奴隶主到领袖< 3 混乱边缘的繁荣 >
+"https://blog.csdn.net/haoel/article/details/2868" 《自适应软件开发》—从奴隶主到领袖< 4 领导—协作 >
+"https://blog.csdn.net/haoel/article/details/2870" 《自适应软件开发》—从奴隶主到领袖< 6 边角料 >
+"https://blog.csdn.net/haoel/article/details/2866" 《自适应软件开发》—从奴隶主到领袖< 2 世界观的重生 >
+"https://blog.csdn.net/haoel/article/details/2869" 《自适应软件开发》—从奴隶主到领袖< 5 预测—协作—学习 >
+"https://blog.csdn.net/haoel/article/details/2878" 编程修养（七）
+"https://blog.csdn.net/haoel/article/details/2876" 编程修养（五）
+"https://blog.csdn.net/haoel/article/details/2875" 编程修养（四）
+"https://blog.csdn.net/haoel/article/details/2877" 编程修养（六）
+"https://blog.csdn.net/haoel/article/details/2873" 编程修养（二）
+"https://blog.csdn.net/haoel/article/details/2874" 编程修养（三）
+"https://blog.csdn.net/haoel/article/details/2872" 编程修养（一）
+"https://blog.csdn.net/haoel/article/details/2871" Inside i++
+"https://blog.csdn.net/haoel/article/details/2863" 哈希表心得
+"https://blog.csdn.net/haoel/article/details/2864" 用C写有面向对象特点的程序
