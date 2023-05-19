@@ -2,13 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-URL = 'https://blog.csdn.net/haoel/article/details/2872'
+# URL = 'https://blog.csdn.net/haoel/article/details/2872'
 #driver = webdriver.Firefox()
 driver = webdriver.Chrome()
 driver.maximize_window()
 
 def extract(url, fn):
-  driver.get(URL)
+  driver.get(url)
   driver.implicitly_wait(1)
   old_source = page_source = driver.page_source
   

@@ -1,6 +1,6 @@
 <html lang="zh-CN"><head>
     <meta charset="utf-8">
-    <link rel="canonical" href="https://blog.csdn.net/haoel/article/details/2872">
+    <link rel="canonical" href="https://blog.csdn.net/haoel/article/details/4914403">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="renderer" content="webkit">
     <meta name="force-rendering" content="webkit">
@@ -12,8 +12,8 @@
     <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
     <meta name="applicable-device" content="pc">
     <link href="https://g.csdnimg.cn/static/logo/favicon32.ico" rel="shortcut icon" type="image/x-icon">
-    <title>编程修养（一）_haoel的博客-CSDN博客</title>
-    <script type="text/javascript" async="" src="https://pos.baidu.com/auto_dup?di=0&amp;uuid=331de4c7ee1f96f8&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0x0&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;psi=8eae523cfd365af2&amp;dcb=___baidu_union_callback&amp;dtm=AUTO_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tpr=1684466740606&amp;ti=%E7%BC%96%E7%A8%8B%E4%BF%AE%E5%85%BB%EF%BC%88%E4%B8%80%EF%BC%89_haoel%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2&amp;ari=2&amp;ver=0511&amp;kws=%E7%BC%96%E7%A8%8B%E4%BF%AE%E5%85%BB%EF%BC%88%E4%B8%80%EF%BC%89&amp;dps=%E7%BC%96%E7%A8%8B%E4%BF%AE%E5%85%BB%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%9F%E6%98%AF%E4%B8%8D%E6%98%AF%E6%87%82%E5%BE%97%E5%BE%88%E5%A4%9A%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9F%E8%BF%98%E6%98%AF%E6%87%82%E5%BA%95%E5%B1%82%E7%BC%96%E7%A8%8B%EF%BC%9F%E8%BF%98%E6%98%AF%E7%BC%96%E7%A8%8B%E9%80%9F%E5%BA%A6%E6%AF%94%E8%BE%83%E5%BF%AB%EF%BC%9F%E6%88%91%E8%A7%89%E5%BE%97%E9%83%BD%E4%B8%8D%E6%98%AF%E3%80%82%E5%AF%B9%E4%BA%8E%E4%B8%80%E4%BA%9B%E6%8A%80%E6%9C%AF&amp;dbv=2&amp;drs=1&amp;pcs=1512x865&amp;pss=1512x865&amp;cfv=0&amp;cpl=5&amp;chi=2&amp;cce=true&amp;cec=UTF-8&amp;tlm=1684466740&amp;prot=2&amp;rw=865&amp;ltu=https%3A%2F%2Fblog.csdn.net%2Fhaoel%2Farticle%2Fdetails%2F2872&amp;ecd=1&amp;dft=0&amp;uc=1512x944&amp;pis=-1x-1&amp;sr=1512x982&amp;tcn=1684466741&amp;dc=4&amp;aa=1"></script><script type="text/javascript" charset="utf-8" async="" src="https://gsp0.baidu.com/yrwHcjSl0MgCo2Kml5_Y_D3/api/customsearch/apiaccept?sid=10742016945123576423&amp;v=2.0&amp;callback=csdn.afterBaiduSearchInit"></script><script type="text/javascript" async="" src="https://g.csdnimg.cn/asdf/1.1.3/trackad.js"></script><script src="https://zz.bdstatic.com/linksubmit/push.js"></script><script type="text/javascript" async="" src="https://g.csdnimg.cn/??asdf/1.1.3/trackad.js,iconfont/nav/iconfont-1.0.1.js,notification/1.3.8/notify.js,notification/1.3.8/main.js"></script><script src="https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac"></script><script src="https://s3a.pstatp.com/toutiao/push.js?1abfa13dfe74d72d41d83c86d240de427e7cac50c51ead53b2e79d40c7952a23ed7716d05b4a0f683a653eab3e214672511de2457e74e99286eb2c33f4428830" id="ttzz"></script><script>
+    <title>橡皮鸭程序调试法_haoel的博客-CSDN博客</title>
+    <script type="text/javascript" async="" src="https://pos.baidu.com/auto_dup?di=0&amp;uuid=70d8935f0c215094&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0x0&amp;enu=encoding&amp;exps=110011&amp;ant=0&amp;psi=e7cfa03202dfc2a1&amp;dcb=___baidu_union_callback&amp;dtm=AUTO_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tpr=1684469625228&amp;ti=%E6%A9%A1%E7%9A%AE%E9%B8%AD%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E6%B3%95_haoel%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2&amp;ari=2&amp;ver=0511&amp;kws=%E6%A9%A1%E7%9A%AE%E9%B8%AD%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E6%B3%95&amp;dps=%E5%8E%9F%E6%96%87%EF%BC%9Ahttp%3A%2F%2Fcoolshell.cn%2F%3Fp%3D1719%C2%A0%EF%BC%88%E9%85%B7%E5%A3%B3%EF%BC%89%C2%A0%E4%B8%8B%E9%9D%A2%EF%BC%8C%E8%AE%A9%E6%88%91%E6%9D%A5%E4%B8%BA%E4%BD%A0%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E8%B0%83%E8%AF%95%E5%A4%A7%E6%B3%95%E2%80%94%E2%80%94%E2%80%9C%E6%A9%A1%E7%9A%AE%E9%B8%AD&amp;dbv=2&amp;drs=1&amp;pcs=1512x865&amp;pss=1512x865&amp;cfv=0&amp;cpl=5&amp;chi=26&amp;cce=true&amp;cec=UTF-8&amp;tlm=1684469625&amp;prot=2&amp;rw=865&amp;ltu=https%3A%2F%2Fblog.csdn.net%2Fhaoel%2Farticle%2Fdetails%2F4914403&amp;ecd=1&amp;dft=0&amp;uc=1512x944&amp;pis=-1x-1&amp;sr=1512x982&amp;tcn=1684469625&amp;dc=4&amp;aa=1"></script><script type="text/javascript" charset="utf-8" async="" src="https://gsp0.baidu.com/yrwHcjSl0MgCo2Kml5_Y_D3/api/customsearch/apiaccept?sid=10742016945123576423&amp;v=2.0&amp;callback=csdn.afterBaiduSearchInit"></script><script type="text/javascript" async="" src="https://g.csdnimg.cn/asdf/1.1.3/trackad.js"></script><script src="https://zz.bdstatic.com/linksubmit/push.js"></script><script type="text/javascript" async="" src="https://g.csdnimg.cn/??asdf/1.1.3/trackad.js,iconfont/nav/iconfont-1.0.1.js,notification/1.3.8/notify.js,notification/1.3.8/main.js"></script><script src="https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac"></script><script src="https://s3a.pstatp.com/toutiao/push.js?1abfa13dfe74d72d41d83c86d240de427e7cac50c51ead53b2e79d40c7952a23ed7716d05b4a0f683a653eab3e214672511de2457e74e99286eb2c33f4428830" id="ttzz"></script><script>
       (function(){ 
         var el = document.createElement("script"); 
         el.src = "https://s3a.pstatp.com/toutiao/push.js?1abfa13dfe74d72d41d83c86d240de427e7cac50c51ead53b2e79d40c7952a23ed7716d05b4a0f683a653eab3e214672511de2457e74e99286eb2c33f4428830"; 
@@ -22,8 +22,8 @@
         s.parentNode.insertBefore(el, s);
       })(window)
     </script>
-        <meta name="keywords" content="编程修养（一）">
-    <meta name="description" content="编程修养————什么是好的程序员？是不是懂得很多技术细节？还是懂底层编程？还是编程速度比较快？我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。我认为好的程序员应该有以下几方面的素质：&nbsp; 1、有专研精神，勤学善问、举一反三。&nbsp; 2、积极向上的态度，有创造性思维。&nbsp; 3、与人积极交流沟通的能力，有团队精神。&nbsp; 4、谦虚谨慎，">
+        <meta name="keywords" content="橡皮鸭程序调试法">
+    <meta name="description" content="原文：http://coolshell.cn/?p=1719&nbsp;（酷壳）&nbsp;下面，让我来为你介绍一个程序调试大法——“橡皮鸭程序调试法”，这个方法在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。那么，为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具，所以，">
         <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/detail_enter-a049487e0d.min.css">
     <style>
         #content_views pre{
@@ -43,7 +43,7 @@
             user-select: none; 
         }
     </style>
-    <script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/haoel/article/details/2872","appid":"1638831770136827","pubDate":"2003-05-08T12:11:00","title":"编程修养（一）_haoel的博客-CSDN博客","upDate":"2003-05-08T12:11:00"}</script>
+    <script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/haoel/article/details/4914403","appid":"1638831770136827","pubDate":"2009-12-01T14:12:00","title":"橡皮鸭程序调试法_haoel的博客-CSDN博客","upDate":"2009-12-01T14:12:00"}</script>
         <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/themesSkin/skin3-template/skin3-template-762f7595fd.min.css">
     <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -53,14 +53,14 @@
         var blog_address = "https://haoel.blog.csdn.net";
         var currentUserName = "";
         var isOwner = false;
-        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/haoel/article/details/2872";
+        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/haoel/article/details/4914403";
         var blogUrl = "https://blog.csdn.net/";
         var avatar = "https://profile.csdnimg.cn/9/A/0/1_haoel";
-        var articleTitle = "编程修养（一）";
-        var articleDesc = "编程修养————什么是好的程序员？是不是懂得很多技术细节？还是懂底层编程？还是编程速度比较快？我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。我认为好的程序员应该有以下几方面的素质：  1、有专研精神，勤学善问、举一反三。  2、积极向上的态度，有创造性思维。  3、与人积极交流沟通的能力，有团队精神。  4、谦虚谨慎，";
-        var articleTitles = "编程修养（一）_haoel的博客-CSDN博客";
+        var articleTitle = "橡皮鸭程序调试法";
+        var articleDesc = "原文：http://coolshell.cn/?p=1719 （酷壳） 下面，让我来为你介绍一个程序调试大法——“橡皮鸭程序调试法”，这个方法在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。那么，为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具，所以，";
+        var articleTitles = "橡皮鸭程序调试法_haoel的博客-CSDN博客";
         var nickName = "haoel";
-        var articleDetailUrl = "https://haoel.blog.csdn.net/article/details/2872";
+        var articleDetailUrl = "https://haoel.blog.csdn.net/article/details/4914403";
         if(window.location.host.split('.').length == 3) {
             blog_address = blogUrl + username;
         }
@@ -77,7 +77,7 @@
         }
     </style>
     <script src="https://dup.baidustatic.com/js/ds.js"></script>
-<link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar-default.css"><script type="text/javascript" src="https://g.csdnimg.cn/common/csdn-notification/csdn-notification.js"></script><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/collection-box/2.1.1/collection-box.css"><script type="text/javascript" src="https://g.csdnimg.cn/user-login/3.0.1/user-login.js"></script><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-login/3.0.0/user-login.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-tooltip/2.6/user-tooltip.css"><link rel="stylesheet" type="text/css" href="//g.csdnimg.cn/user-medal/2.0.0/user-medal.css"><script type="text/javascript" src="https://g.csdnimg.cn/lib/html2canvas/1.4.1/html2canvas.min.js"></script><style></style><style type="text/css">.hljs-ln{border-collapse:collapse}            .hljs-ln td{padding:0}            .hljs-ln-n{text-align: right;padding-right: 8px;}            .hljs-ln-n:before{content:attr(data-line-number)}</style><style type="text/css">pre{position: relative}pre:hover .code-full-screen{display:none !important;}.code-full-screen{display: none !important;position: absolute;right: 4px;top: 3px;width: 24px !important;height: 24px !important;margin: 4px !important;}pre:hover .hljs-button{display: block}.hljs-button{display: none;position: absolute;right: 4px;top: 4px;font-size: 12px;color: #ffffff;background-color: #9999AA;padding: 2px 8px;margin: 8px;border-radius: 4px;cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.05);}.hljs-button:after{content: attr(data-title)}code .hljs-button{margin: 2px 8px;}</style><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-accusation/1.0.5/user-accusation.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-ordertip/5.0.1/user-ordertip.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/order-payment/4.0.1/order-payment.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/side-toolbar/3.4/side-toolbar.css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+<link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar-default.css"><script type="text/javascript" src="https://g.csdnimg.cn/common/csdn-notification/csdn-notification.js"></script><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/collection-box/2.1.1/collection-box.css"><script type="text/javascript" src="https://g.csdnimg.cn/user-login/3.0.1/user-login.js"></script><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-tooltip/2.6/user-tooltip.css"><link rel="stylesheet" type="text/css" href="//g.csdnimg.cn/user-medal/2.0.0/user-medal.css"><script type="text/javascript" src="https://g.csdnimg.cn/lib/html2canvas/1.4.1/html2canvas.min.js"></script><style></style><style type="text/css">.hljs-ln{border-collapse:collapse}            .hljs-ln td{padding:0}            .hljs-ln-n{text-align: right;padding-right: 8px;}            .hljs-ln-n:before{content:attr(data-line-number)}</style><style type="text/css">pre{position: relative}pre:hover .code-full-screen{display:none !important;}.code-full-screen{display: none !important;position: absolute;right: 4px;top: 3px;width: 24px !important;height: 24px !important;margin: 4px !important;}pre:hover .hljs-button{display: block}.hljs-button{display: none;position: absolute;right: 4px;top: 4px;font-size: 12px;color: #ffffff;background-color: #9999AA;padding: 2px 8px;margin: 8px;border-radius: 4px;cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.05);}.hljs-button:after{content: attr(data-title)}code .hljs-button{margin: 2px 8px;}</style><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-accusation/1.0.5/user-accusation.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-login/3.0.0/user-login.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/user-ordertip/5.0.1/user-ordertip.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/order-payment/4.0.1/order-payment.css"><link rel="stylesheet" type="text/css" href="https://g.csdnimg.cn/side-toolbar/3.4/side-toolbar.css"><link rel="stylesheet" type="text/css" href="//g.csdnimg.cn/common/csdn-footer/csdn-footer.css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
 .MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
 .MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
 .MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
@@ -118,7 +118,7 @@
 #MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
 #MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
 .MathJax_Error {color: #CC0000; font-style: italic}
-</style><link rel="stylesheet" type="text/css" href="//g.csdnimg.cn/common/csdn-footer/csdn-footer.css"><style type="text/css">.MJXp-script {font-size: .8em}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
 .MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
 .MJXp-bold {font-weight: bold}
 .MJXp-italic {font-style: italic}
@@ -173,7 +173,7 @@
 .MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
 .MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
 </style></head>
-  <body class="nodata " style=""><div id="MathJax_Message" style="display: none;"></div><div id="csdn-toolbar" style="position: fixed; min-width: 100%; width: max-content; top: 0px; left: 0px; z-index: 1993;">
+  <body class="nodata " style=""><div id="MathJax_Message" style="display: none;"></div><div id="csdn-toolbar" style="position: relative; min-width: 100%; width: max-content;">
                     <div class="toolbar-inside exp3">
                       <div class="toolbar-container">
                         <div class="toolbar-container-left">
@@ -263,7 +263,7 @@
                     </div>
                   </div>
         <script>
-            var toolbarSearchExt = '{"landingWord":[],"queryWord":"","tag":["编程","语言","加密","工作","产品","c"],"title":"编程修养（一）"}';
+            var toolbarSearchExt = '{"landingWord":[],"queryWord":"","tag":["编程"],"title":"橡皮鸭程序调试法"}';
         </script>
     <script src="https://g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar.js" type="text/javascript"></script>
     <script>
@@ -286,16 +286,16 @@
     <link rel="stylesheet" href="https://g.csdnimg.cn/lib/swiper/6.0.4/css/swiper.css">
     <script src="https://g.csdnimg.cn/lib/swiper/6.0.4/js/swiper.js" async=""></script>
     <script>
-      var articleId = 2872;
-      var commentscount = 32;
-      var curentUrl = "https://blog.csdn.net/haoel/article/details/2872";
+      var articleId = 4914403;
+      var commentscount = 37;
+      var curentUrl = "https://blog.csdn.net/haoel/article/details/4914403";
       var myUrl = "https://my.csdn.net/";
-        var highlight = ["语言","产品","修养","编程","工作","加密"];//高亮数组
+        var highlight = ["程序调试","橡皮","编程","法","鸭"];//高亮数组
         var isRecommendModule = true;
           var isBaiduPre = true;
           var baiduCount = 2;
           var setBaiduJsCount = 10;
-      var share_card_url = "https://app-blog.csdn.net/share?article_id=2872&username=haoel"
+      var share_card_url = "https://app-blog.csdn.net/share?article_id=4914403&username=haoel"
       var articleType = 1;
       var baiduKey = "";
       var userNewReport = true;
@@ -317,7 +317,7 @@
       var isShowToQuestion = false;
         var baiduSearchChannel = 'pc_relevant'
         var baiduSearchIdentification = '.235^v36^pc_relevant_default_base3'
-        var distRequestId = '1684466604437_74585'
+        var distRequestId = '1684469621993_47733'
         var initRewardObject = {
           giver: currentUserName,
           anchor: username,
@@ -380,7 +380,7 @@
         <div class="article-header-box">
         <div class="article-header">
             <div class="article-title-box">
-                <h1 class="title-article" id="articleContentId">编程修养（一）</h1>
+                <h1 class="title-article" id="articleContentId">橡皮鸭程序调试法</h1>
             </div>
             <div class="article-info-box">
                 <div class="article-bar-top">
@@ -388,15 +388,15 @@
                     <div class="bar-content">
                     <a class="follow-nickName " href="https://haoel.blog.csdn.net" target="_blank" rel="noopener" title="haoel">haoel</a>
                     <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt="">
-                        <span class="time">于&nbsp;2003-05-08 12:11:00&nbsp;发布</span>
+                        <span class="time">于&nbsp;2009-12-01 14:12:00&nbsp;发布</span>
                     <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
-                    <span class="read-count">59107</span>
+                    <span class="read-count">20328</span>
                     <a id="blog_detail_zk_collection" class="un-collection" data-report-click="{&quot;mod&quot;:&quot;popu_823&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;ab&quot;:&quot;new&quot;}">
                         <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
                         <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
                         <span class="name">收藏</span>
                         <span class="get-collection">
-                            26
+                            6
                         </span>
                     </a>
                     </div>
@@ -407,11 +407,6 @@
                                 <a class="tag-link" href="https://blog.csdn.net/haoel/category_9200.html" target="_blank" rel="noopener">软件开发</a>
                             <span class="label">文章标签：</span>
                                 <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;编程&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;编程\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E7%BC%96%E7%A8%8B&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">编程</a>
-                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;语言&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;语言\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E8%AF%AD%E8%A8%80&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">语言</a>
-                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;加密&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;加密\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E5%8A%A0%E5%AF%86&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">加密</a>
-                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;工作&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;工作\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E5%B7%A5%E4%BD%9C&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">工作</a>
-                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;产品&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;产品\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=%E4%BA%A7%E5%93%81&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">产品</a>
-                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;c&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;c\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=c&amp;t=all&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">c</a>
                     </div>
                 </div>
                 <div class="slide-content-box">
@@ -420,7 +415,7 @@
                             版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
                         </div>
                         <div class="article-source-link">
-                            本文链接：<a href="https://blog.csdn.net/haoel/article/details/2872" target="_blank">https://blog.csdn.net/haoel/article/details/2872</a>
+                            本文链接：<a href="https://blog.csdn.net/haoel/article/details/4914403" target="_blank">https://blog.csdn.net/haoel/article/details/4914403</a>
                         </div>
                     </div>
                 </div>
@@ -431,7 +426,7 @@
             </div>
         </div>
     </div>
-    <div id="blogHuaweiyunAdvert"><div class="column-group active" data-id="142463" data-url="https://devpress.csdn.net/avi?utm_source=blog_detail" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.8542&quot;}">                    <div class="column-group-item">                      <div class="item-l">                        <a class="item-target" href="javascript:;" title="音视频技术专区">                          <img class="item-target" src="https://devpress.csdnimg.cn/3a42b04ad7964ef68dc963bc1fa110a5.png" alt="">                          <span class="title item-target">                              <span>                              <span class="tit">音视频技术专区</span>                              <span class="dec">文章已被社区收录</span>                              </span>                          </span>                        </a>                      </div>                      <div class="item-r">                        <a class="item-target article-column-bt join-huawei-community">加入社区</a>                      </div>                    </div>                  </div></div>
+    
         <div id="blogColumnPayAdvert">
             <div class="column-group">
                 <div class="column-group-item column-group0 column-group-item-one">
@@ -461,25 +456,29 @@
         <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/kdoc_html_views-1a98987dfd.css">
         <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-25cebea3f9.css">
                 <div id="content_views" class="htmledit_views">
-                    <p align="center"><strong>编程修养<br>————</strong></p> 
-<p><font face="Courier New" size="2">什么是好的程序员？是不是懂得很多技术细节？还是懂底层编程？还是编程速度比较快？我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。</font></p> 
-<p><font face="Courier New" size="2">我认为好的程序员应该有以下几方面的素质：</font></p> 
-<p><font face="Courier New" size="2">&nbsp; 1、有专研精神，勤学善问、举一反三。<br>&nbsp; 2、积极向上的态度，有创造性思维。<br>&nbsp; 3、与人积极交流沟通的能力，有团队精神。<br>&nbsp; 4、谦虚谨慎，戒骄戒燥。<br>&nbsp; 5、写出的代码质量高。包括：代码的稳定、易读、规范、易维护、专业。</font></p> 
-<p><font face="Courier New" size="2">这些都是程序员的修养，这里我想谈谈“编程修养”，也就是上述中的第5点。我觉得，如果我要了解一个作者，我会看他所写的小说，如果我要了解一个画家，我会看他所画的图画，如果我要了解一个工人，我会看他所做出来的产品，同样，如果我要了解一个程序员，我想首先我最想看的就是他的程序代码，程序代码可以看出一个程序员的素质和修养，程序就像一个作品，有素质有修养的程序员的作品必然是一图精美的图画，一首美妙的歌曲，一本赏心悦目的小说。</font></p> 
-<p><font face="Courier New" size="2">我看过许多程序，没有注释，没有缩进，胡乱命名的变量名，等等，等等，我把这种人统称为没有修养的程序，这种程序员，是在做创造性的工作吗？不，完全就是在搞破坏，他们与其说是在编程，还不如说是在对源程序进行“加密”，这种程序员，见一个就应该开除一个，因为他编的程序所创造的价值，远远小于需要在上面进行维护的价值。</font></p> 
-<p><font face="Courier New" size="2">程序员应该有程序员的修养，那怕再累，再没时间，也要对自己的程序负责。我宁可要那种动作慢，技术一般，但有良好的写程序风格的程序员，也不要那种技术强、动作快的“搞破坏”的程序员。有句话叫“字如其人”，我想从程序上也能看出一个程序员的优劣。因为，程序是程序员的作品，作品的好坏直截关系到程序员的声誉和素质。而“修养”好的程序员一定能做出好的程序和软件。</font></p> 
-<p><font face="Courier New" size="2">有个成语叫“独具匠心”，意思是做什么都要做得很专业，很用心，如果你要做一个“匠”，也就是造诣高深的人，那么，从一件很简单的作品上就能看出你有没有“匠”的特性，我觉得做一个程序员不难，但要做一个“程序匠”就不简单了。编程序很简单，但编出有质量的程序就难了。</font></p> 
-<p><font face="Courier New" size="2">我在这里不讨论过深的技术，我只想在一些容易让人忽略的东西上说一说，虽然这些东西可能很细微，但如果你不注意这些细微之处的话，那么他将会极大的影响你的整个软件质量，以及整个软件程的实施，所谓“千里之堤，毁于蚁穴”。</font></p> 
-<p><font face="Courier New" size="2">“细微之处见真功”，真正能体现一个程序的功底恰恰在这些细微之处。</font></p> 
-<p><font face="Courier New" size="2">这就是程序员的——编程修养。我总结了在用C/C++语言（主要是C语言）进行程序写作上的三十二个“修养”，通过这些，你可以写出质量高的程序，同时也会让看你程序的人渍渍称道，那些看过你程序的人一定会说：“这个人的编程修养不错”。</font></p> 
-<p><font face="Courier New" size="2">&nbsp;&nbsp;&nbsp; ————————————————————————<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01、版权和版本<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 02、缩进、空格、换行、空行、对齐<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03、程序注释<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04、函数的[in][out]参数<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05、对系统调用的返回进行判断<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06、if 语句对出错的处理<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07、头文件中的#ifndef<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08、在堆上分配内存<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09、变量的初始化<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10、h和c文件的使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11、出错信息的处理<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12、常用函数和循环语句中的被计算量<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13、函数名和变量名的命名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14、函数的传值和传指针<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15、修改别人程序的修养<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16、把相同或近乎相同的代码形成函数和宏<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17、表达式中的括号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18、函数参数中的const<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19、函数的参数个数<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20、函数的返回类型，不要省略<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21、goto语句的使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22、宏的使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23、static的使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24、函数中的代码尺寸<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25、typedef的使用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26、为常量声明宏<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27、不要为宏定义加分号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28、||和&amp;&amp;的语句执行顺序<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29、尽量用for而不是while做循环<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30、请sizeof类型而不是变量<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31、不要忽略Warning<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32、书写Debug版和Release版的程序</font></p> 
-<p><font face="Courier New" size="2">&nbsp;&nbsp;&nbsp; ————————————————————————</font></p> 
-<p align="right"><a href="http://www.csdn.net/Develop/read_article.asp?id=18270"><font face="Courier New" color="#0000ff" size="2"><strong>下一页</strong></font></a><font face="Courier New" color="#0000ff" size="2"><strong>-&gt;</strong></font></p> 
-<p><font face="Courier New" size="2"><strong>（版权所有，转载时请注明出处和作者信息）</strong></font></p> 
-<p><font face="Courier New" size="2"></font>&nbsp;</p>
-                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://haoel.blog.csdn.net/article/details/2872&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
+                    <p><span style="font-size: small;"><strong>原文：</strong></span><a href="http://coolshell.cn/?p=1719"><span style="font-size: small;"><strong>http://coolshell.cn/?p=1719</strong></span></a><span style="font-size: small;"><strong>&nbsp;（</strong></span><a href="http://coolshell.cn/"><span style="font-size: small;"><strong>酷壳</strong></span></a><span style="font-size: small;"><strong>）</strong></span></p> 
+<p>&nbsp;</p> 
+<p><img class="size-thumbnail wp-image-1721 alignright" style="float: right;" title="Rubber Duck Debugging" src="http://coolshell.cn/wp-content/uploads/2009/11/Rubber-Duck-150x150.jpg" alt="Rubber Duck Debugging" width="150" height="150">下面，让我来为你介绍一个程序调试大法——“橡皮鸭程序调试法”，这个方法在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。</p> 
+<p>那么，为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具，所以，这个东西应该家家户户都必备的。因为，这个方法由西方人发明，所以，就被取名为“橡皮鸭”了。</p> 
+<p>好了，话不多说，下面是整个调试方法的流程。</p> 
+<ol><li>找一个橡皮鸭子。你可以去借，去偷，去抢，去买，自己制作……反正你要搞到一个橡皮鸭子。 </li><li>把这个橡皮鸭子放在你跟前。标准做法是放在你的桌子上，电脑显示器边，或是键盘边，反正是你的跟前，面朝你。 </li><li>然后，打开你的源代码。不管是电脑里的还是打印出来的。 </li><li>对着那只橡皮鸭子，把你写下的所有代码，一行一行地，精心地，向这只橡皮鸭子解释清楚。记住，这是解释，你需要解释出你的想法，思路，观点。不然，那只能算是表述，而不是解释。 </li><li>当你在向这只始终保持沉默的橡皮鸭子解释的过程中，你会发现你的想法，观点，或思路和实际的代码相偏离了，于是你也就找到了代码中的bug。 </li><li>找到了BUG，一定要记得感谢一下那个橡皮鸭子哦。 </li></ol> 
+<p>什么？你觉得这个方法太“愚蠢”，太“弱智”了？是的，看上去，会这样做的人脑子好像是有点毛病。不过，我要告诉你的是，这个方法的确有效。<strong>因为，这就是“Code Review”的雏形</strong>！下面让我来给你解释一下。</p> 
+<p>&nbsp;</p> 
+<blockquote> 
+ <p>Once a problem is described in sufficient detail, its solution is obvious.</p> 
+</blockquote> 
+<p>上面这句话的意思是</p> 
+<blockquote> 
+ <p>一旦一个问题被充分地描述了他的细节，那么解决方法也是显而易见的。</p> 
+</blockquote> 
+<p>我相信在座的各位都有过这样的经历，当你死活都找不到问题的原因的时候，当你寻求他人的帮助时，对别人解释整个你的想法和意图或是问题背景的时候，你自己都没有解释完，就已经找到问题的原因了。这样的经历，相信大家一定有过。这就是这个方法的意义所在。</p> 
+<p>所以，“橡皮鸭”只是一个形式，其主要目的是要你把自己写的代码做“自查”，也就是自己解释给自己听。当然，为了不让你像个“精神分裂”的程序员，引入“橡皮鸭”是很有必要的（虽然这样还是有点精神病，但比起精神分裂来说算是好的了，嘻嘻）。所以，真实的本质是Code Review。关于代码评审，大家可以看一下我的这篇文章《<a href="http://coolshell.cn/?p=1302"><span style="color: #2970a6;">Code Review中的几个提示</span></a>》，你会明白其中更多的东西的。</p> 
+<p>最后，我想和大家说一下道具“橡皮鸭”。是的，在我们的身边，你不一定能找得“橡皮鸭”，但你可以找到你你的同事，你的朋友，来做这个“橡皮鸭”，当然，他们并不一定有“橡皮鸭”好使，因为你的那些同事或朋友一定会在你解释的时候，随意地发表意见和看法，相当的令人annoying。《<a href="http://coolshell.cn/?p=1302"><span style="color: #2970a6;">Code Review中的几个提示</span></a>》和《<a href="http://coolshell.cn/?p=16"><span style="color: #2970a6;">结对编程的利与弊</span></a>》也谈到了一些，供你借鉴。</p> 
+<p>（全文完）</p> 
+<p> </p>
+                </div><div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://haoel.blog.csdn.net/article/details/4914403&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div></div>
         </div>
-        <div id="treeSkill" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;}" style="display: block;"><div class="skill-tree-box"><div class="skill-tree-head">文章知识点与官方知识档案匹配，可进一步学习相关知识</div><div class="skill-tree-body"><div class="skill-tree-item"><span class="skill-tree-href"><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog" target="_blank">C技能树</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog" target="_blank">首页</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6866&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog&quot;}" href="https://edu.csdn.net/skill/c/?utm_source=csdn_ai_skill_tree_blog" target="_blank">概览</a></span><span class="skill-tree-con"><span class="skill-tree-count">147953</span> 人正在系统学习中</span></div></div></div></div>
+        
     </article>
   <script>
   $(function() {
@@ -500,8 +499,8 @@
   })
   </script>
 </div>
-    <div class="more-toolbox-new" id="toolBarBox">
-      <div class="left-toolbox" style="position: relative; z-index: 996; left: 0px; bottom: 0px; width: 1010px;">
+    <div class="more-toolbox-new more-toolbox-active" id="toolBarBox">
+      <div class="left-toolbox" style="position: fixed; z-index: 996; left: 409px; bottom: 0px; width: 1010px;">
         <div class="toolbox-left">
             <div class="profile-box">
               <a class="profile-href" target="_blank" href="https://haoel.blog.csdn.net"><img class="profile-img" src="https://profile.csdnimg.cn/9/A/0/1_haoel">
@@ -523,7 +522,7 @@
                 <img class="isactive" style="display:none" id="is-like-imgactive" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2021Active.png" alt="">
                 <img class="isdefault" style="display:block" id="is-like-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2021Black.png" alt="">
                 <span id="spanCount" class="count ">
-                    14
+                    10
                 </span>
               </a>
               <div class="tool-hover-tip"><span class="text space">点赞</span></div>
@@ -542,7 +541,7 @@
                 <img class="isdefault" id="is-collection-img" style="display:block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectBlack.png" alt="">
                 <img class="isactive" id="is-collection-imgactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectActive.png" alt="">
                 <span class="count get-collection " id="get-collection">
-                    26
+                    6
                 </span>
               </a>
               <div class="tool-hover-tip collect">
@@ -552,7 +551,7 @@
                   </span>
                 </div>
               </div>
-              <div class="tool-active-list" style="display: block;">
+              <div class="tool-active-list">
                 <div class="text">
                   觉得还不错?
                   <span class="collect-text" id="tool-active-list-collection">
@@ -574,7 +573,7 @@
               <a class="tool-item-href" href="#commentBox" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7009&quot;}">
               <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newComment2021Black.png" alt="">
               <span class="count">
-                  32
+                  37
               </span>
             </a>
             <div class="tool-hover-tip"><span class="text space">评论</span></div>
@@ -586,15 +585,15 @@
               <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newShareBlack.png" alt="">
             </a>
               <div class="QRcode" id="tool-QRcode">
-            <div class="share-bg-icon icon1 icon3" id="shareBgIcon"></div>
+            <div class="share-bg-icon icon1 icon4" id="shareBgIcon"></div>
               <div class="share-bg-box">
                 <div class="share-content">
                   <img class="share-avatar" src="https://profile.csdnimg.cn/9/A/0/1_haoel" alt="">
                   <div class="share-tit">
-                    编程修养（一）
+                    橡皮鸭程序调试法
                   </div>
                   <div class="share-dec">
-                    编程修养————什么是好的程序员？是不是懂得很多技术细节？还是懂底层编程？还是编程速度比较快？我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。我认为好的程序员应该有以下几方面的素质：&nbsp; 1、有专研精神，勤学善问、举一反三。&nbsp; 2、积极向上的态度，有创造性思维。&nbsp; 3、与人积极交流沟通的能力，有团队精神。&nbsp; 4、谦虚谨慎，
+                    原文：http://coolshell.cn/?p=1719&nbsp;（酷壳）&nbsp;下面，让我来为你介绍一个程序调试大法——“橡皮鸭程序调试法”，这个方法在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。那么，为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具，所以，
                   </div>
                   <a id="copyPosterUrl" class="url" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7493&quot;}">复制链接</a>
                 </div>
@@ -619,23 +618,23 @@
 <script src="//g.csdnimg.cn/??sharewx/1.2.1/sharewx.js" type="text/javascript"></script>
 <script type="text/javascript" crossorigin="" src="https://g.csdnimg.cn/common/csdn-login-box/csdn-login-box.js"></script>
 <script type="text/javascript" crossorigin="" src="https://g.csdnimg.cn/collection-box/2.1.1/collection-box.js"></script>                <div class="first-recommend-box recommend-box ">
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/pigpigzhao/2634618" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-2634618-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/pigpigzhao/2634618&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/baidu_27030417/10261572" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-10261572-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/baidu_27030417/10261572&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/pigpigzhao/2634618" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-2634618-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/pigpigzhao/2634618&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-2634618-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-2634618-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=1">
-					<div class="left ellipsis-online ellipsis-online-1">《<em>编程</em><em>修养</em>》-做一个有一定<em>修养</em>的程序员</div>
+				<a href="https://download.csdn.net/download/baidu_27030417/10261572" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-10261572-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/baidu_27030417/10261572&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-10261572-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-10261572-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=1">
+					<div class="left ellipsis-online ellipsis-online-1">arduino简单使用模板脚本（模拟cantool装置）</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info display-flex">
-					<span class="info-block">08-20</span>
+					<span class="info-block">02-27</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/pigpigzhao/2634618" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-2634618-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/pigpigzhao/2634618&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-2634618-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-2634618-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=1">
-				<div class="desc ellipsis-online ellipsis-online-1">一本提升<em>编程</em><em>修养</em>，养成良好编码风格的指导书。从基础的代码缩进、简要批注、变量命名规范...讲解，能让你写出通俗易懂、易维护的高质量代码，提升<em>编程</em>经验，做一个有一定<em>修养</em>的程序员...</div>
+			<a href="https://download.csdn.net/download/baidu_27030417/10261572" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6661.1&quot;,&quot;mod&quot;:&quot;popu_871&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-10261572-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Paid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/baidu_27030417/10261572&quot;}" data-report-query="spm=1001.2101.3001.6661.1&amp;utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-10261572-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-10261572-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=1">
+				<div class="desc ellipsis-online ellipsis-online-1">控制arduino模拟cantool装置发送报文，并控制led闪烁，</div>
 			</a>
 		</div>
 	</div>
@@ -643,23 +642,39 @@
                 </div>
               <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_commontools-ad67eb7a7a.min.js" type="text/javascript" async=""></script>
                 <div class="second-recommend-box recommend-box ">
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/knight1001/1873309" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-1-1873309-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/knight1001/1873309&quot;}">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_40359381/article/details/109773049" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-109773049-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_40359381/article/details/109773049&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/knight1001/1873309" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-1-1873309-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/knight1001/1873309&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-1-1873309-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-1-1873309-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=2">
-					<div class="left ellipsis-online ellipsis-online-1">陈皓 <em>编程</em><em>修养</em> pdf</div>
+				<a href="https://blog.csdn.net/qq_40359381/article/details/109773049" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-109773049-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_40359381/article/details/109773049&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=2">
+					<div class="left ellipsis-online ellipsis-online-1">小黄<em>鸭</em>调试<em>法</em>-程序猿修炼之道</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_40359381" target="_blank" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=2"><span class="blog-title">倔强100%的博客</span></a>
+				</div>
 				<div class="info display-flex">
-					<span class="info-block">12-04</span>
+					<span class="info-block time">11-18</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					6056
+					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/knight1001/1873309" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-1-1873309-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/knight1001/1873309&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-1-1873309-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-1-1873309-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=2">
-				<div class="desc ellipsis-online ellipsis-online-1">讲的还不错，权当学习、借鉴一下别人的<em>编程</em>风格了。</div>
+			<a href="https://blog.csdn.net/qq_40359381/article/details/109773049" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-1-109773049-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/qq_40359381/article/details/109773049&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109773049-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=2">
+				<div class="desc ellipsis-online ellipsis-online-1">什么是小黄<em>鸭</em>调试<em>法</em>
+小黄<em>鸭</em>调试<em>法</em>（又称<em>橡皮</em><em>鸭</em>调试<em>法</em>，黄<em>鸭</em>除虫<em>法</em>）是软件工程中使用的调试代码方<em>法</em>之一。此概念是参照于一个来自《程序员修炼之道》书中的一个故事。传说中程序大师随身携带一只小黄<em>鸭</em>，在调试代码的时候会在桌上放上这只小黄<em>鸭</em>，然后详细地向<em>鸭</em>子解释每行代码。
+小黄<em>鸭</em>调试<em>法</em>适用场景
+example A
+
+程序猿A：又报错了，明明代码看起来没问题啊。。。
+程序猿B：敲键盘。
+程序猿A：明明什么都没做，怎么就报错了呢？
+程序猿B：你在讲鬼故事吗？
+程序猿A：帮我看一下，这里哪出现了问题？
+程序猿B：这写的啥啊？</div>
 			</a>
 		</div>
 	</div>
@@ -668,401 +683,468 @@
 <a id="commentBox" name="commentBox"></a>
 <div id="pcCommentBox" class="comment-box comment-box-new2 unlogin-comment-box-new" style="display:none">
     <div class="unlogin-comment-model">
-        <span class="unlogin-comment-tit">32&nbsp;条评论</span>
+        <span class="unlogin-comment-tit">37&nbsp;条评论</span>
       <span class="unlogin-comment-text">您还未登录，请先</span>
       <span class="unlogin-comment-bt">登录</span>
       <span class="unlogin-comment-text">后发表或查看评论</span>
     </div>
 </div>              <div class="recommend-box insert-baidu-box recommend-box-style ">
                 <div class="recommend-item-box no-index" style="display:none"></div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/sunny_maxu/665302" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-2-665302-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sunny_maxu/665302&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/u011288709/10136767" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-2-10136767-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/u011288709/10136767&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/sunny_maxu/665302" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-2-665302-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sunny_maxu/665302&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-2-665302-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-2-665302-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=3">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em> --  陈皓</div>
+				<a href="https://download.csdn.net/download/u011288709/10136767" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-2-10136767-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/u011288709/10136767&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-2-10136767-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-2-10136767-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=3">
+					<div class="left ellipsis-online ellipsis-online-1">CRectTracker<em>橡皮</em>筋类应用程序</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info display-flex">
-					<span class="info-block">10-04</span>
+					<span class="info-block">11-28</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/sunny_maxu/665302" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~AntiPaid-2-665302-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~AntiPaid&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sunny_maxu/665302&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-2-665302-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7EAntiPaid-2-665302-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=3">
-				<div class="desc ellipsis-online ellipsis-online-1">本篇总结了在用C/C++<em>语言</em>（主要是C<em>语言</em>）进行程序写作上的三十二个“<em>修养</em>”，通过这些，你可以写出质量高的程序，同时也会让看你程序的人渍渍称道，那些看过你程序的人一定会说：“这个人的<em>编程</em><em>修养</em>不错”。</div>
+			<a href="https://download.csdn.net/download/u011288709/10136767" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-2-10136767-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/u011288709/10136767&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-2-10136767-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-2-10136767-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=3">
+				<div class="desc ellipsis-online ellipsis-online-1">MFC CRectTracker<em>橡皮</em>筋类的应用范例，内含详细注释，附带详解网址，看过绝对掌握CRectTracker<em>橡皮</em>筋类</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://eureka1024.blog.csdn.net/article/details/83116511" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-3-83116511-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://eureka1024.blog.csdn.net/article/details/83116511&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42132352/19096495" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-3-19096495-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42132352/19096495&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://eureka1024.blog.csdn.net/article/details/83116511" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-3-83116511-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://eureka1024.blog.csdn.net/article/details/83116511&quot;}" data-report-query="spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=4">
-					<div class="left ellipsis-online ellipsis-online-1">如何写出美的程序 --《<em>编程</em><em>修养</em>》-- 总结与读后感</div>
+				<a href="https://download.csdn.net/download/weixin_42132352/19096495" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-3-19096495-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42132352/19096495&quot;}" data-report-query="spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-3-19096495-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-3-19096495-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=4">
+					<div class="left ellipsis-online ellipsis-online-1">droidbrute:经过统计优化的USB<em>橡皮</em><em>鸭</em>式有效负载，可蛮力破解4位Android PIN码</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
-				<div class="info">
-					<a href="https://blog.csdn.net/m0_37697335" target="_blank" data-report-query="spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=4"><span class="blog-title">Eureka1024的博客</span></a>
-				</div>
 				<div class="info display-flex">
-					<span class="info-block time">10-17</span>
-					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					419
-					</span>
+					<span class="info-block">05-26</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://eureka1024.blog.csdn.net/article/details/83116511" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-3-83116511-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://eureka1024.blog.csdn.net/article/details/83116511&quot;}" data-report-query="spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-83116511-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=4">
-				<div class="desc ellipsis-online ellipsis-online-1">今天推荐一本关于<em>编程</em><em>修养</em>的书（文末附链接），注意这些你就能写出美的代码，把程序写成艺术当成一种信仰。
-
-总结如下：
-
-一、程序员应该有以下几方面的素质
-
-1、有专研精神，勤学善问、举一反三。
-
-2、积极向上的态度，有创造性思维。
-
-3、与人积极交流沟通的能力，有团队精神。
-
-4、谦虚谨慎，戒骄戒燥。
-
-5、写出的代码质量高。
-
-二、使程序变得优美的32个素养（自注：自己的收获和理解）
-
-1、版本和...</div>
+			<a href="https://download.csdn.net/download/weixin_42132352/19096495" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.3&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-3-19096495-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;3&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42132352/19096495&quot;}" data-report-query="spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-3-19096495-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-3-19096495-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=4">
+				<div class="desc ellipsis-online ellipsis-online-1">#Droidbrute Android PIN破解USB<em>橡皮</em><em>鸭</em>式有效负载，通过统计生成的单词列表使之高效。
+ ##它的作用使用不安全的4位PIN设置破解Android设备上的密码。 该脚本是USB<em>橡皮</em><em>鸭</em>有效载荷，可模拟键盘以输入统计上最常用的4位PIN。 通过从最常见的PIN到最不常见的PIN进行操作，可以极大地提高手机破解的速度。
+ ##先决条件
+Droidbrute有效载荷
+＃＃视频
+ ##信用词表摘自我参加的Defcon演讲：  ：</div>
 			</a>
 		</div>
 	</div>
 </div>
 		
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/tb201006/14032847" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-14032847-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/tb201006/14032847&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/a527749703/2426774" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-2426774-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/a527749703/2426774&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/tb201006/14032847" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-14032847-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/tb201006/14032847&quot;}" data-report-query="spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-14032847-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-14032847-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=5">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>_什么是好的程序员.pdf</div>
+				<a href="https://download.csdn.net/download/a527749703/2426774" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-2426774-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/a527749703/2426774&quot;}" data-report-query="spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-2426774-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-2426774-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=5">
+					<div class="left ellipsis-online ellipsis-online-1">C++  <em>橡皮</em>筋程序</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info display-flex">
-					<span class="info-block">01-06</span>
+					<span class="info-block">06-04</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/tb201006/14032847" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-14032847-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/tb201006/14032847&quot;}" data-report-query="spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-14032847-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-14032847-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=5">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>_什么是好的程序员.pdf</div>
+			<a href="https://download.csdn.net/download/a527749703/2426774" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.4&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-4-2426774-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;4&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/a527749703/2426774&quot;}" data-report-query="spm=1001.2101.3001.6650.4&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-2426774-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-4-2426774-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=5">
+				<div class="desc ellipsis-online ellipsis-online-1">可以画线
+
+
+还可以调颜色
+
+
+支持二次开发</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/Ediml/530920" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-530920-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/Ediml/530920&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42125826/18878449" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-18878449-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42125826/18878449&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/Ediml/530920" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-530920-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/Ediml/530920&quot;}" data-report-query="spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-530920-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-530920-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=6">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>.pdf</div>
+				<a href="https://download.csdn.net/download/weixin_42125826/18878449" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-18878449-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42125826/18878449&quot;}" data-report-query="spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-18878449-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-18878449-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=6">
+					<div class="left ellipsis-online ellipsis-online-1">USB-Rubber-Ducky-Scripts:一些<em>橡皮</em><em>鸭</em>子脚本</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info display-flex">
-					<span class="info-block">07-08</span>
+					<span class="info-block">05-19</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://download.csdn.net/download/Ediml/530920" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-530920-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/Ediml/530920&quot;}" data-report-query="spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-530920-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-530920-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=6">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>,<em>编程</em><em>修养</em>,<em>编程</em><em>修养</em></div>
+			<a href="https://download.csdn.net/download/weixin_42125826/18878449" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.5&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~Rate-5-18878449-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;5&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42125826/18878449&quot;}" data-report-query="spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-18878449-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-18878449-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=6">
+				<div class="desc ellipsis-online ellipsis-online-1">USB-Ducky脚本
+一些主要用于Mac OS X的Rubber Ducky脚本</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/sinkary/article/details/7549247" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-7549247-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/sinkary/article/details/7549247&quot;}">
+<div class="recommend-item-box type_blog clearfix" data-url="https://zhaochen.blog.csdn.net/article/details/106737135" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-106737135-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://zhaochen.blog.csdn.net/article/details/106737135&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/sinkary/article/details/7549247" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-7549247-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/sinkary/article/details/7549247&quot;}" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7">
-					<div class="left ellipsis-online ellipsis-online-1">陈皓 <em>编程</em><em>修养</em></div>
+				<a href="https://zhaochen.blog.csdn.net/article/details/106737135" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-106737135-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://zhaochen.blog.csdn.net/article/details/106737135&quot;}" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7">
+					<div class="left ellipsis-online ellipsis-online-1">程序员必备技能：<em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em></div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info">
-					<a href="https://blog.csdn.net/sinkary" target="_blank" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7"><span class="blog-title">sinkary的专栏</span></a>
+					<a href="https://blog.csdn.net/Fighting_Boom" target="_blank" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7"><span class="blog-title">FightingBoom的博客</span></a>
 				</div>
 				<div class="info display-flex">
-					<span class="info-block time">05-09</span>
+					<span class="info-block time">06-13</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					5866
+					1419
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/sinkary/article/details/7549247" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-7549247-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/sinkary/article/details/7549247&quot;}" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-7549247-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7">
-				<div class="desc ellipsis-online ellipsis-online-1">陈皓 CSDN 《<em>编程</em><em>修养</em>》系列文章转载
+			<a href="https://zhaochen.blog.csdn.net/article/details/106737135" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.6&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-6-106737135-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;6&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://zhaochen.blog.csdn.net/article/details/106737135&quot;}" data-report-query="spm=1001.2101.3001.6650.6&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-106737135-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=7">
+				<div class="desc ellipsis-online ellipsis-online-1">道阻且长，行则将至。埋头苦干，不鸣则已，一鸣惊人！加油，骚年！
 
-
-
-
-<em>编程</em><em>修养</em>（一）
-<em>编程</em><em>修养</em>（二）
-<em>编程</em><em>修养</em>（三）
-<em>编程</em><em>修养</em>（四）
-<em>编程</em><em>修养</em>（五）
-
-<em>编程</em><em>修养</em>（六）
-<em>编程</em><em>修养</em>（七）&nbsp;
-
-
-一步步，将知识变成习惯。</div>
+前言
+  本文转载自：
+  陈皓：<em>橡皮</em><em>鸭</em>子调试<em>法</em>
+  coolshell：<em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em>
+正文开始
+  下面，让我来为你介绍一个<em>程序调试</em>大<em>法</em>——“<em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em>”，这个方<em>法</em>在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。
+  那么，为什么这个方<em>法</em>要叫做<em>橡皮</em><em>鸭</em>呢？因为<em>橡皮</em><em>鸭</em>子是西方人在泡澡时最喜欢玩的一个小玩具，所以，这个东西应该家家.</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/kid0912/article/details/713434" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-713434-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/kid0912/article/details/713434&quot;}">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_42370320/article/details/117209245" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-117209245-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_42370320/article/details/117209245&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/kid0912/article/details/713434" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-713434-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/kid0912/article/details/713434&quot;}" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>之C<em>语言</em>篇</div>
+				<a href="https://blog.csdn.net/weixin_42370320/article/details/117209245" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-117209245-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_42370320/article/details/117209245&quot;}" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8">
+					<div class="left ellipsis-online ellipsis-online-1">小黄<em>鸭</em>c语言<em>编程</em>,小黄<em>鸭</em>调试<em>法</em></div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info">
-					<a href="https://blog.csdn.net/kid0912" target="_blank" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8"><span class="blog-title">kid0912的回收站</span></a>
+					<a href="https://blog.csdn.net/weixin_42370320" target="_blank" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8"><span class="blog-title">weixin_42370320的博客</span></a>
 				</div>
 				<div class="info display-flex">
-					<span class="info-block time">05-08</span>
+					<span class="info-block time">05-23</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					881
+					1464
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/kid0912/article/details/713434" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-713434-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/kid0912/article/details/713434&quot;}" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-713434-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8">
-				<div class="desc ellipsis-online ellipsis-online-1">什么是好的程序员？是不是懂得很多技术细节？还是懂底层<em>编程</em>？还是<em>编程</em>速度比较快？ 我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对 于速度快，只要编得多也就熟能生巧了。 我认为好的程序员应该有以下几方面的素质： 1、有专研精神，勤学善问、举一反三。 2、积极向上的态度，有创造性思维。 3、与人积极交流沟通的能力，有团队精神。 4、谦虚谨慎，戒骄戒燥。 5、写出的代码质量</div>
+			<a href="https://blog.csdn.net/weixin_42370320/article/details/117209245" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.7&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-7-117209245-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;7&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_42370320/article/details/117209245&quot;}" data-report-query="spm=1001.2101.3001.6650.7&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7-117209245-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=8">
+				<div class="desc ellipsis-online ellipsis-online-1">前言原作者：程序员的那些事没有找到原文链接，查看了 程序员的那些事 的公众号，显示原文已经被删除正文花了一下午(或一天)在试图解决某个 Bug，后来才知道解决方案很简单，当时就是没有想到。有个同事正好路过，看到你愁眉苦脸的，问你“怎么了呀？”“噢，是这样的。我遇到了一个问题，点击这个控件的时……” 当你正准备和同事详细解释的时候，突然灵光一现，你话都没说完，就中断了和同事的倾诉，继续干活了。同事微...</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/wangpeng138375/article/details/8374222" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-8374222-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/wangpeng138375/article/details/8374222&quot;}">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_30699235/article/details/97870936" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-97870936-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_30699235/article/details/97870936&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://blog.csdn.net/wangpeng138375/article/details/8374222" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-8374222-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/wangpeng138375/article/details/8374222&quot;}" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9">
-					<div class="left ellipsis-online ellipsis-online-1">什么是好的程序员</div>
+				<a href="https://blog.csdn.net/weixin_30699235/article/details/97870936" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-97870936-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_30699235/article/details/97870936&quot;}" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9">
+					<div class="left ellipsis-online ellipsis-online-1"><em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em>[转] 相当有趣^_^</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info">
-					<a href="https://blog.csdn.net/wangpeng138375" target="_blank" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9"><span class="blog-title">领悟  释然</span></a>
+					<a href="https://blog.csdn.net/weixin_30699235" target="_blank" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9"><span class="blog-title">weixin_30699235的博客</span></a>
 				</div>
 				<div class="info display-flex">
-					<span class="info-block time">12-22</span>
+					<span class="info-block time">11-17</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					307
+					131
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/wangpeng138375/article/details/8374222" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-8374222-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/wangpeng138375/article/details/8374222&quot;}" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-8374222-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9">
-				<div class="desc ellipsis-online ellipsis-online-1">1. 一个程序员用在写程序上的时间大概占他的<em>工作</em>时间的10-20%，大部分的程序员每天大约能写出10-12行的能进入最终的<em>产品</em>的代码——不管他的技术水平有多高。好的程序员花去90%的时间在思考、研究和实验，来找出最优方案。差的程序员花去90%的时间在调试问题程序、盲目的修改程序，期望某种写法能可行。“一个卓越的车床工可以要求比一个一般的车床工多拿数倍高的工资，但一个卓越的软件写手的价值会10000</div>
+			<a href="https://blog.csdn.net/weixin_30699235/article/details/97870936" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.8&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-8-97870936-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;8&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/weixin_30699235/article/details/97870936&quot;}" data-report-query="spm=1001.2101.3001.6650.8&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-8-97870936-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=9">
+				<div class="desc ellipsis-online ellipsis-online-1"><em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em> http://coolshell.cn/?p=1719 2009年11月10日 1,218 次点击 阅读评论 发表评论 下面，让我来为你介绍一个<em>程序调试</em>大<em>法</em>——“<em>橡皮</em><em>鸭</em><em>程序调试</em><em>法</em>”，这个方<em>法</em>在调试界是很出众的，实施起来相当方便和简易，几乎可以随时随地地实验，几乎不需要借助任何的软件和硬件的支持，你甚至可以把你的程序打印出来，在纸面上进行调试。 那么，为什么这个方<em>法</em>要叫做<em>橡皮</em><em>鸭</em>呢？...</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_43240387/12248392" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-9-12248392-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_43240387/12248392&quot;}">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/u011904605/article/details/52723154" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-52723154-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/u011904605/article/details/52723154&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://download.csdn.net/download/weixin_43240387/12248392" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-9-12248392-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_43240387/12248392&quot;}" data-report-query="spm=1001.2101.3001.6650.9&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-9-12248392-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-9-12248392-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=10">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>-2020.pdf</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">03-14</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/weixin_43240387/12248392" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-9-12248392-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_43240387/12248392&quot;}" data-report-query="spm=1001.2101.3001.6650.9&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-9-12248392-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-9-12248392-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=10">
-				<div class="desc ellipsis-online ellipsis-online-1">什么是好的程序员?是不是懂得很多技术细节?还是懂底层<em>编程</em>?还是<em>编程</em>速度比较快?我觉得都不 是。对于一些技术细节 来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也 就熟能生巧了。</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/zyx1986823/211798" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-10-211798-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/zyx1986823/211798&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/zyx1986823/211798" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-10-211798-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/zyx1986823/211798&quot;}" data-report-query="spm=1001.2101.3001.6650.10&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-10-211798-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-10-211798-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=11">
-					<div class="left ellipsis-online ellipsis-online-1">&lt;&lt;<em>编程</em><em>修养</em>&gt;&gt;</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">07-18</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/zyx1986823/211798" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-10-211798-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/zyx1986823/211798&quot;}" data-report-query="spm=1001.2101.3001.6650.10&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-10-211798-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-10-211798-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=11">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>,愿大家都有良好的的<em>编程</em><em>修养</em></div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/sinat_30967935/11265675" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-11265675-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sinat_30967935/11265675&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/sinat_30967935/11265675" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-11265675-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sinat_30967935/11265675&quot;}" data-report-query="spm=1001.2101.3001.6650.11&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-11265675-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-11265675-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=12">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>-林锐.pdf</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">06-30</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/sinat_30967935/11265675" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-11265675-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/sinat_30967935/11265675&quot;}" data-report-query="spm=1001.2101.3001.6650.11&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-11265675-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-11265675-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=12">
-				<div class="desc ellipsis-online ellipsis-online-1">什么是好的程序员？是不是懂得很多技术细节？还是懂底层<em>编程</em>？还是<em>编程</em>速度比较快？我觉得都不是。对于一些技术细节
-来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/ghost031903/3516666" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-3516666-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/ghost031903/3516666&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/ghost031903/3516666" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-3516666-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/ghost031903/3516666&quot;}" data-report-query="spm=1001.2101.3001.6650.12&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-3516666-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-3516666-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=13">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em> <em>编程</em><em>修养</em> <em>编程</em><em>修养</em></div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">08-13</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/ghost031903/3516666" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-3516666-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/ghost031903/3516666&quot;}" data-report-query="spm=1001.2101.3001.6650.12&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-3516666-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-3516666-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=13">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em><em>编程</em><em>修养</em><em>编程</em><em>修养</em><em>编程</em><em>修养</em><em>编程</em><em>修养</em></div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/y412724/4511430" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-4511430-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/y412724/4511430&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/y412724/4511430" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-4511430-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/y412724/4511430&quot;}" data-report-query="spm=1001.2101.3001.6650.13&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-4511430-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-4511430-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=14">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>.PDF</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">08-19</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/y412724/4511430" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-4511430-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/y412724/4511430&quot;}" data-report-query="spm=1001.2101.3001.6650.13&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-4511430-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-4511430-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=14">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>,写的不错，供C<em>编程</em>习惯需要修炼的人下载</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/songchuwang1868/10570948" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-14-10570948-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/songchuwang1868/10570948&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://download.csdn.net/download/songchuwang1868/10570948" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-14-10570948-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/songchuwang1868/10570948&quot;}" data-report-query="spm=1001.2101.3001.6650.14&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-10570948-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-10570948-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=15">
-					<div class="left ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>高清pdf</div>
-				</a>
-			</div>
-			<div class="info-box display-flex">
-				<div class="info display-flex">
-					<span class="info-block">07-29</span>
-				</div>
-			</div>
-		</div>
-		<div class="desc-box">
-			<a href="https://download.csdn.net/download/songchuwang1868/10570948" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-14-10570948-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/songchuwang1868/10570948&quot;}" data-report-query="spm=1001.2101.3001.6650.14&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-10570948-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-10570948-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=15">
-				<div class="desc ellipsis-online ellipsis-online-1"><em>编程</em><em>修养</em>高清pdf
-<em>编程</em><em>修养</em>高清pdf
-<em>编程</em><em>修养</em>高清pdf
-<em>编程</em><em>修养</em>高清pdf</div>
-			</a>
-		</div>
-	</div>
-</div>
-<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-125795432-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432&quot;}">
-	<div class="content-box">
-		<div class="content-blog display-flex">
-			<div class="title-box">
-				<a href="https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-125795432-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432&quot;}" data-report-query="spm=1001.2101.3001.6650.15&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=16">
-					<div class="left ellipsis-online ellipsis-online-1">C/C++程序员的<em>编程</em><em>修养</em></div>
+				<a href="https://blog.csdn.net/u011904605/article/details/52723154" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-52723154-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/u011904605/article/details/52723154&quot;}" data-report-query="spm=1001.2101.3001.6650.9&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=10">
+					<div class="left ellipsis-online ellipsis-online-1">小黄<em>鸭</em>调试<em>法</em></div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info">
-					<a href="https://blog.csdn.net/LxXlc468hW35lZn5" target="_blank" data-report-query="spm=1001.2101.3001.6650.15&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=16"><span class="blog-title">轻松学C语言</span></a>
+					<a href="https://blog.csdn.net/u011904605" target="_blank" data-report-query="spm=1001.2101.3001.6650.9&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=10"><span class="blog-title">u011904605的博客</span></a>
 				</div>
 				<div class="info display-flex">
-					<span class="info-block time">07-14</span>
+					<span class="info-block time">10-02</span>
 					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
-					183
+					2020
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-15-125795432-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/LxXlc468hW35lZn5/article/details/125795432&quot;}" data-report-query="spm=1001.2101.3001.6650.15&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15-125795432-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=16">
-				<div class="desc ellipsis-online ellipsis-online-1">点击蓝字关注我们什么是好的C/C++程序员？是不是懂得很多技术细节？还是懂底层<em>编程</em>？还是<em>编程</em>速度比较快？我觉得都不是。对于一些技术细节来说和底层的技术，只要看帮助，查资料就能找到，对于速度快，只要编得多也就熟能生巧了。我认为好的C/C++程序员应该有以下几方面的素质：有专研精神，勤学善问、举一反三。积极向上的态度，有创造性思维。与人积极交流沟通的能力，有团队精神。谦虚谨慎...</div>
+			<a href="https://blog.csdn.net/u011904605/article/details/52723154" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.9&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-9-52723154-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;9&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~Rate&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/u011904605/article/details/52723154&quot;}" data-report-query="spm=1001.2101.3001.6650.9&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-9-52723154-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=10">
+				<div class="desc ellipsis-online ellipsis-online-1">小黄<em>鸭</em>调试<em>法</em>
+&nbsp;编辑
+
+本词条缺少信息栏，补充相关内容使词条更完整，还能快速升级，赶紧来编辑吧！
+
+
+小黄<em>鸭</em>调试<em>法</em>（又称<em>橡皮</em><em>鸭</em>调试<em>法</em>，黄<em>鸭</em>除虫<em>法</em>）是软件工程中使用的调试代码方<em>法</em>之一。
+
+
+此概念是参照于一个来自《程序员修炼之道》书中的一个故事。传说中程序大师随身携带一只小黄<em>鸭</em>，在调试代码的时候会在桌上放上这只小黄<em>鸭</em>，然后详细地向<em>鸭</em>子解释每行代码。
+　　许多程序员都有过向别人（甚</div>
 			</a>
 		</div>
 	</div>
 </div>
-<div class="recommend-item-box type_chatgpt clearfix" data-url="https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507&quot;}">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42104906/14958727" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-10-14958727-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42104906/14958727&quot;}">
 	<div class="content-box">
 		<div class="content-blog display-flex">
 			<div class="title-box">
-				<a href="https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507&quot;}" data-report-query="spm=1001.2101.3001.6650.16&amp;utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=17">
-					<div class="left ellipsis-online ellipsis-online-1">跳一跳scratch3.0<em>编程</em></div>
+				<a href="https://download.csdn.net/download/weixin_42104906/14958727" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-10-14958727-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42104906/14958727&quot;}" data-report-query="spm=1001.2101.3001.6650.10&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-10-14958727-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-10-14958727-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=11">
+					<div class="left ellipsis-online ellipsis-online-1">ducky：Chrome扩展程序可覆盖（超级可爱的）<em>橡皮</em><em>鸭</em>，作为<em>橡皮</em><em>鸭</em>调试期间的虚拟伴侣</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">01-30</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42104906/14958727" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.10&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-10-14958727-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;10&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42104906/14958727&quot;}" data-report-query="spm=1001.2101.3001.6650.10&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-10-14958727-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-10-14958727-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=11">
+				<div class="desc ellipsis-online ellipsis-online-1">小<em>鸭</em>
+与您的在线数字<em>橡皮</em><em>鸭</em>见面，以进行陪伴和调试-Ducky！  :baby_chick:
+ 镀Chrome扩展，覆盖了一只可爱的小<em>橡皮</em><em>鸭</em>，作为<em>橡皮</em><em>鸭</em>调试和一般开发工作中的数字伴侣。 为什么？ 因为谁不想在他们的浏览器上放一只可爱的<em>鸭</em>子。
+内容
+您是<em>橡皮</em><em>鸭</em>调试的新手吗？
+ 认识您可以与之交谈的可爱的数字伴侣Ducky ，并与<em>橡皮</em><em>鸭</em>进行调试。
+ 除了闲逛外，Ducky还负责设置15分钟警报，如果您想很快休息一下，又不浪费时间的话。
+ Ducky正在记忆中，并记住了对开发人员友好的网站（如StackOverflow，GitHub，Reddit和CodePen）的链接。
+ Ducky也很害羞，所以不要尝试用鼠标指针触摸他，否则他可能会躲避您。  :winking_face:
+设置说明
+所以，您也想要自己的Ducky，是吗？
+ 这很容易！
+ 下载此存储库的内容，然后转到chrome://extensions
+ 如果尚未启用，则启用开发人员模式。
+ 选择Load Unpacked
+ 在该存储库中找到包含所有文件的文件夹，然后选择它。
+ - 小<em>鸭</em>到了！
+其它浏览器
+（实验性）Mozilla Fir</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42126274/18199290" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-18199290-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42126274/18199290&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42126274/18199290" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-18199290-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42126274/18199290&quot;}" data-report-query="spm=1001.2101.3001.6650.11&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-18199290-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-18199290-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=12">
+					<div class="left ellipsis-online ellipsis-online-1">rubber-duck-scripts:USB Rubber Duckey的有用脚本</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">04-28</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42126274/18199290" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.11&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-11-18199290-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;11&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42126274/18199290&quot;}" data-report-query="spm=1001.2101.3001.6650.11&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-18199290-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-11-18199290-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=12">
+				<div class="desc ellipsis-online ellipsis-online-1"><em>橡皮</em><em>鸭</em>脚本
+USB Rubber Duckey的有用脚本
+键盘摇摆器
+该脚本每58秒按下一次“ HOME”按钮，这可以防止您的计算机进入某种睡眠/待机模式。</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_38657353/15687687" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-15687687-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_38657353/15687687&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_38657353/15687687" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-15687687-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_38657353/15687687&quot;}" data-report-query="spm=1001.2101.3001.6650.12&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-15687687-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-15687687-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=13">
+					<div class="left ellipsis-online ellipsis-online-1"><em>橡皮</em><em>鸭</em>「Rubberduck」-crx插件</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">03-09</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_38657353/15687687" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.12&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~default-12-15687687-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;12&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_38657353/15687687&quot;}" data-report-query="spm=1001.2101.3001.6650.12&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-15687687-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7Edefault-12-15687687-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=13">
+				<div class="desc ellipsis-online ellipsis-online-1">GitHub的代码审查助手
+Rubberduck是GitHub和Bitbucket的侧边栏，可为您的代码审查带来更好的代码导航。
+浏览代码页和拉取请求时，您可以*悬停以获取符号信息*查找符号的用<em>法</em>*打开符号的定义*使用文件树进行导航
+支持语言:English</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42124743/19192851" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-19192851-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42124743/19192851&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42124743/19192851" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-19192851-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42124743/19192851&quot;}" data-report-query="spm=1001.2101.3001.6650.13&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-19192851-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-19192851-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=14">
+					<div class="left ellipsis-online ellipsis-online-1">Rubber_Ducky_Gather_Network_Info:一个非常快速的<em>橡皮</em><em>鸭</em>脚本，它利用了 C 中的 gatherNetworkInfo.vbs 文件</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">05-29</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42124743/19192851" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.13&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-13-19192851-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;13&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42124743/19192851&quot;}" data-report-query="spm=1001.2101.3001.6650.13&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-19192851-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-13-19192851-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=14">
+				<div class="desc ellipsis-online ellipsis-online-1">Rubber_Ducky_Gather_Network_Info
+ 一个非常快速的<em>橡皮</em><em>鸭</em>脚本，它利用了C:\Windows\System32 文件夹从受害者机器窃取不同的信息。
+Gather_Network_Info_Script
+ REM gathernetworkInfo JonnyBanana 的信息窃取脚本REM  REM 延迟大，因为Windows 需要很多时间来读取带有双<em>鸭</em>固件的Ducky 延迟 10000 图形用户界面延迟 200 STRING cmd /C“开始gatherNetworkInfo.vbs” 延迟 200 REM 以管理员身份运行CTRL-ALT ENTER 延迟 100 左箭头延迟 100 进入REM 脚本需要一点时间来创建文件.... 延迟15000 CTRL ESC 延迟 200 STRING powershell 延迟 200 进入延迟 200 REM</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/qq_24091613/9636836" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-14-9636836-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/qq_24091613/9636836&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/qq_24091613/9636836" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-14-9636836-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/qq_24091613/9636836&quot;}" data-report-query="spm=1001.2101.3001.6650.14&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-14-9636836-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-14-9636836-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=15">
+					<div class="left ellipsis-online ellipsis-online-1">C++程序软件实现的<em>橡皮</em>筋技术</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">09-22</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/qq_24091613/9636836" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.14&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~CTRLIST~Rate-14-9636836-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;14&quot;,&quot;strategy&quot;:&quot;2~default~CTRLIST~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/qq_24091613/9636836&quot;}" data-report-query="spm=1001.2101.3001.6650.14&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-14-9636836-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7ECTRLIST%7ERate-14-9636836-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=15">
+				<div class="desc ellipsis-online ellipsis-online-1"><em>橡皮</em>筋技术</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42134038/19405042" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-15-19405042-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42134038/19405042&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42134038/19405042" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-15-19405042-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42134038/19405042&quot;}" data-report-query="spm=1001.2101.3001.6650.15&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-19405042-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-19405042-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=16">
+					<div class="left ellipsis-online ellipsis-online-1">Duck-Decoder:为 hak5 USB <em>橡皮</em><em>鸭</em>解码注入.bin 文件的 Python 脚本</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">06-05</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42134038/19405042" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.15&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~BlogCommendFromBaidu~default-15-19405042-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;15&quot;,&quot;strategy&quot;:&quot;2~default~BlogCommendFromBaidu~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42134038/19405042&quot;}" data-report-query="spm=1001.2101.3001.6650.15&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-19405042-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-19405042-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=16">
+				<div class="desc ellipsis-online ellipsis-online-1"><em>鸭</em>子解码器
+介绍
+不久前，我去另一个国家接受了一些课程，对我来说很幸运，我已经有了我的<em>鸭</em>子！ 在我的旅行中，我经常发现自己靠近未锁定的计算机，我可以根据情况转储 lssas 或后门，为此我开始做一大堆不同的有效载荷和脚本来窃取所有这些计算机！
+ 对我来说可悲的是，由于当时我没有使用自己的计算机（为了安全），我删除了系统上的整个帐户，除了我备份的源文件……或者我是这么想的！ 我错误地只备份了inject.bin文件，我所有的数千行源代码现在都不见了！ 我想，如果我只是将 .bins 分类，我仍然可以将它们重用于 pwn 计算机，直到一台 Win 8 计算机出现可以被黑客入侵并且我的脚本都不起作用！
+ 这个项目的结果是必须弄清楚我随着时间的推移保存的所有这些inject.bin文件中的内容，以便实时更改有效负载。 这个脚本解决了我经常丢失或意外删除我所有黑客的源代码文件的问题。
+如何使用它
+该</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/hxj4960/3252543" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-3252543-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/hxj4960/3252543&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/hxj4960/3252543" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-3252543-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/hxj4960/3252543&quot;}" data-report-query="spm=1001.2101.3001.6650.16&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-3252543-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-3252543-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=17">
+					<div class="left ellipsis-online ellipsis-online-1"><em>橡皮</em>筋程序c++ MFC vc6.0</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">05-06</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/hxj4960/3252543" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-16-3252543-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/hxj4960/3252543&quot;}" data-report-query="spm=1001.2101.3001.6650.16&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-3252543-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-16-3252543-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=17">
+				<div class="desc ellipsis-online ellipsis-online-1"><em>橡皮</em>筋程序 c++ MFC vc6.0,基于VC 6.0MFC，工程源码，可以运行</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_42650811/86220578" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.17&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-86220578-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;17&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42650811/86220578&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_42650811/86220578" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.17&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-86220578-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;17&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42650811/86220578&quot;}" data-report-query="spm=1001.2101.3001.6650.17&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-86220578-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-86220578-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=18">
+					<div class="left ellipsis-online ellipsis-online-1">zrawingrubberprogram.rar_fastjlc_trynn8_其他小程序_<em>橡皮</em>筋</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">07-15</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_42650811/86220578" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.17&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-download-2~default~OPENSEARCH~Rate-17-86220578-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;17&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Rate&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_42650811/86220578&quot;}" data-report-query="spm=1001.2101.3001.6650.17&amp;utm_medium=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-86220578-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-download-2%7Edefault%7EOPENSEARCH%7ERate-17-86220578-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=18">
+				<div class="desc ellipsis-online ellipsis-online-1">这个程序演示了如何通过vc++来制作类似画图板系统的<em>橡皮</em>筋操作</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_chatgpt clearfix" data-url="https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.18&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;18&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef&quot;}">
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef" class="tit" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.18&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;18&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef&quot;}" data-report-query="spm=1001.2101.3001.6650.18&amp;utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=19">
+					<div class="left ellipsis-online ellipsis-online-1">canvas <em>橡皮</em>擦</div>
 					<div class="tag">最新发布</div>
 				</a>
 			</div>
 			<div class="info-box display-flex">
 				<div class="info display-flex">
-					<span class="info-block">05-02</span>
+					<span class="info-block">02-08</span>
 				</div>
 			</div>
 		</div>
 		<div class="desc-box">
-			<a href="https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.16&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684466604437_74585\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684466604437_74585&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;16&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/0776976ae88511edbcb5fa163eeb3507&quot;}" data-report-query="spm=1001.2101.3001.6650.16&amp;utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-16-0776976ae88511edbcb5fa163eeb3507-blog-2872.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=17">
-				<div class="desc ellipsis-online ellipsis-online-1">跳一跳是一款非常流行的手机游戏，它的玩法是让玩家控制小人跳过一系列方块，难度递增。而在Scratch3.0<em>编程</em>中，我们可以通过模拟这个游戏来锻炼自己的<em>编程</em>能力。
+			<a href="https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef" target="_blank" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.18&quot;,&quot;mod&quot;:&quot;popu_387&quot;,&quot;extra&quot;:&quot;{\&quot;highlightScore\&quot;:0.0,\&quot;utm_medium\&quot;:\&quot;distribute.pc_relevant.none-task-chatgpt-2~default~OPENSEARCH~Position-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235^v36^pc_relevant_default_base3\&quot;,\&quot;dist_request_id\&quot;:\&quot;1684469621993_47733\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1684469621993_47733&quot;,&quot;ab_strategy&quot;:&quot;increase_t0_download_v2&quot;,&quot;index&quot;:&quot;18&quot;,&quot;strategy&quot;:&quot;2~default~OPENSEARCH~Position&quot;,&quot;dest&quot;:&quot;https://wenku.csdn.net/answer/63e33f07b43dc14a7627e8ef&quot;}" data-report-query="spm=1001.2101.3001.6650.18&amp;utm_medium=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-chatgpt-2%7Edefault%7EOPENSEARCH%7EPosition-18-95acfeca2df64fe1822479f58f5af81b-blog-4914403.235%5Ev36%5Epc_relevant_default_base3&amp;utm_relevant_index=19">
+				<div class="desc ellipsis-online ellipsis-online-1">在 canvas 中，可以使用<em>橡皮</em>擦来擦除画布上的某些区域。这可以通过使用 "globalCompositeOperation" 属性来实现。
 
-首先，我们需要先了解Scratch3.0<em>编程</em><em>语言</em>和软件环境，学会如何添加角色和背景等基本操作。然后，我们可以考虑如何编写一个跳一跳游戏的程序。
+要使用<em>橡皮</em>擦，你需要做的是将 "globalCompositeOperation" 设置为 "destination-out"。这会将画布设置为在每次绘制时从画布中删除图形。然后，使用 canvas 的绘图方<em>法</em>绘制一个矩形或圆形，就可以在画布上擦除图形了。
 
-在程序中，我们需要设置角色的运动轨迹和速度，使其能够精确地跳过方块，并且尽可能多地跳过方块获取得分。同时，我们还需要设置游戏结束的条件，例如角色掉下方块或撞到了方块，以及如何计算得分。
+例如：
 
-在编写程序的过程中，我们需要利用Scratch3.0<em>编程</em><em>语言</em>中的各种积木块和脚本，例如条件判断、循环结构、变量、函数等，来实现游戏的各种功能。同时，我们还可以借助Scratch3.0中的声音、动画、效果等特效来增强游戏的乐趣。
+```
+ctx.globalCompositeOperation = 'destination-out';
+ctx.beginPath();
+ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+ctx.fill();
+```
 
-总的来说，跳一跳Scratch3.0<em>编程</em>是一项非常有趣和有益的<em>编程</em>练习，它可以提高我们的逻辑思维、创造力和团队合作能力，让我们更好地理解和应用计算机科学。</div>
+在上面的代码中，"ctx" 是 canvas 的绘图上下文，"x" 和 "y" 是<em>橡皮</em>擦的圆心坐标，"radius" 是<em>橡皮</em>擦的半径。</div>
 			</a>
 		</div>
 	</div>
@@ -1223,7 +1305,7 @@
                 <dd class="font">总排名</dd>
             </a>
         </dl>
-        <dl class="text-center" style="min-width:58px" title="6646033">  
+        <dl class="text-center" style="min-width:58px" title="6646289">  
             <dt><span class="count">664万+</span></dt>
             <dd>访问</dd>
         </dl>
@@ -1241,7 +1323,7 @@
             <dt><span class="count">3万+</span></dt>
             <dd>积分</dd>
         </dl>
-         <dl class="text-center" id="fanBox" title="23528">
+         <dl class="text-center" id="fanBox" title="23529">
             <dt><span class="count" id="fan">2万+</span></dt>
             <dd>粉丝</dd>
         </dl>
@@ -1253,8 +1335,8 @@
             <dt><span class="count">5573</span></dt>
             <dd>评论</dd>
         </dl>
-        <dl class="text-center" title="9118">
-            <dt><span class="count">9118</span></dt>
+        <dl class="text-center" title="9119">
+            <dt><span class="count">9119</span></dt>
             <dd>收藏</dd>
         </dl>
     </div>
@@ -1556,7 +1638,7 @@ R.I.P.</span>
 <script type="text/javascript" src="https://g.csdnimg.cn/user-medal/2.0.0/user-medal.js"></script>        </div>
 <div class="recommend-right align-items-stretch clearfix" id="rightAside" data-type="recommend">
     <aside class="recommend-right_aside">
-        <div id="recommend-right" style="position: fixed; top: 56px;">
+        <div id="recommend-right">
                         
             <div class="aside-box kind_person d-flex flex-column">
                     <h3 class="aside-title">分类专栏</h3>
@@ -1659,7 +1741,7 @@ R.I.P.</span>
 <div class="comment-side-box-shadow comment-side-tit-close" id="commentSideBoxshadow">
 <div class="comment-side-content">
 	<div class="comment-side-tit">
-		<div class="comment-side-tit-count">评论&nbsp;<span class="count">32</span></div>
+		<div class="comment-side-tit-count">评论&nbsp;<span class="count">37</span></div>
 	<img class="comment-side-tit-close" src="https://csdnimg.cn/release/blogv2/dist/pc/img/closeBt.png"></div>
 	<div id="pcCommentSideBox" class="comment-box comment-box-new2 unlogin-comment-box-new" style="display:none">
 	</div>
@@ -1945,7 +2027,7 @@ R.I.P.</span>
     }
   </script>
   <script type="text/javascript" src="https://csdnimg.cn/release/blog_mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config;executed=true">
     MathJax.Hub.Config({
       "HTML-CSS": {
         linebreaks: { automatic: true, width: "94%container" },
@@ -1984,10 +2066,10 @@ R.I.P.</span>
     </a>
     
     
-    <a class="option-box" data-type="gotop">
+    <a class="option-box go-top-hide" data-type="gotop">
       <img src="https://g.csdnimg.cn/side-toolbar/3.4/images/fanhuidingbucopy.png" alt="" srcset="">
       <span class="show-txt">返回<br>顶部</span>
     </a>
     
   </div>
-  </div></body><!-- 富文本柱状图  --></html>
+  </div><div class="imgViewDom">        <div class="swiper swiper-container-initialized swiper-container-horizontal">          <a class="close-btn">            <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/quoteClose1White.png">          </a>          <div class="swiper-wrapper" style="transition: all 0ms ease 0s;"><div class="swiper-slide"><a target="_blank" href="http://coolshell.cn/wp-content/uploads/2009/11/Rubber-Duck-150x150.jpg"><img src="http://coolshell.cn/wp-content/uploads/2009/11/Rubber-Duck-150x150.jpg"></a></div></div>          <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>          <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>      </div></body><!-- 富文本柱状图  --></html>

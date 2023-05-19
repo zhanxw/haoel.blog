@@ -7,3 +7,7 @@ A list of Haoel's blog based on: https://github.com/ghostincoolshell/haoel-artic
 test.py
 
 Crawl script
+
+Need to strip out setTimeout function.
+
+for i in *html; do grep -v  onerror=\"setTimeout $i > aa; mv aa $i; done;
